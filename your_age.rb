@@ -1,11 +1,9 @@
-def age
-  require 'date'
-  dob = Date.new(1988, 06, 30) 
-  today = DateTime.now.to_date
+require "date"
 
-  yrs = today - dob 
-  return yrs
-
+def how_old(dob)
+  dob = Date.strptime(dob, %y-%m-%d)
+  now = DateTime.now.strptime(now ,%y-%m-%d )
+  old = (now - dob)
+  return
 end  
 
-age

@@ -1,9 +1,9 @@
-def days_until_christmas
-  require 'date' 
-  current_date = DateTime.now
-  xmas_date = DateTime.new(2015, 12, 25, 0, 0)
-  days_to = (xmas_date - current_date).to_i
-return 
+require "date"
+
+def days_to_christmas()
+now = DateTime.now
+25th = DateTime.new(2015, 12, 25) 
+days_till = (25th - now)
+return
 end  
 
-days_until_christmas
